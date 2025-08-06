@@ -2,6 +2,8 @@
 
 This project combines YOLOv8 object detection with OpenCV’s Nano Tracker to achieve fast, real-time object tracking on low-power devices like Jetson Nano. It’s designed for surveillance, robotics, and embedded AI systems.
 
+![Uploading objectdetection.gif…]()
+
 ---
 
 ## 🎯 Objective
