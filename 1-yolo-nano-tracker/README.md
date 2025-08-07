@@ -8,7 +8,7 @@ This project combines YOLOv8 object detection with OpenCV’s Nano Tracker to ac
 
 ## 🎯 Objective
 
-To track moving objects (people, vehicles, etc.) in real-time using lightweight models suitable for Jetson Nano without compromising speed.
+To track moving objects (people, vehicles, etc.) in real-time using lightweight models suitable for devices like Jetson Nano, raspberry pi5 without compromising speed.
 
 ---
 
@@ -29,5 +29,4 @@ To track moving objects (people, vehicles, etc.) in real-time using lightweight 
 3. Tracker updates object position across frames
 4. Bounding boxes and IDs are displayed live
 
-pip install opencv-python
 
