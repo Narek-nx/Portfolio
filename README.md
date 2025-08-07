@@ -14,7 +14,6 @@ With 2+ years of hands-on experience in OpenCV, YOLO-based detection, matching a
 | [SIFT + HOG + DEGENSAC-USAC Matching](./2-sift-hog-matching) | Robust feature matching for rotated/scaled objects | OpenCV, SIFT, HOG, LBP |
 | [Custom Object Detection with YOLOv8](./3-yolo-custom-training) | Training and deploying a YOLOv8 model for custom dataset | YOLOv8, PyTorch, Label Studio |
 | [Offline Smart Surveillance System](./4-low-power-surveillance) | Raspberry Pi-based detection + recording + alerting system | YOLO, ffmpeg, threading |
-| [Tracker Benchmark on Jetson](./5-algorithm-comparison) | Speed vs. accuracy of CSRT, KCF, Nano Tracker, SORT | OpenCV, benchmarking, Jetson Nano |
 
 ---
 
