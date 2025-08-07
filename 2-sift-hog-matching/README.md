@@ -1,6 +1,6 @@
 # SIFT + BF + DEGENSAC + USAC Feature Matching
 
-This project implements a robust image matching system using feature detectors (like SIFT or ORB) and OpenCV’s advanced homography estimators: **DEGENSAC** and **USAC**.
+This project implements a robust image matching system using feature detectors (like SIFT or ORB) and OpenCV’s advanced homography estimators: **DEGENSAC** and **USAC** , it also uses **LBP** and **HOG**.
 
 ## 📌 Features
 
