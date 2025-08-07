@@ -1,0 +1,13 @@
+# Path to the dataset root directory
+path: datasets/your_dataset
+
+# Paths relative to `path`
+train: images/train
+val: images/val
+test: images/test  # Optional, can be omitted if no test set
+
+# Number of classes
+nc: 1
+
+# Class names list
+names: ["your_class_name"]
