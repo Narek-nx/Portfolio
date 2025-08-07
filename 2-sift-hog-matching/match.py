@@ -71,16 +71,18 @@ roi_img = img1[y:y+h, x:x+w]
 use_hog = True
 use_lbp = True
 
-# ORB
-orb = cv2.ORB_create(
-    nfeatures=100000, scaleFactor=1.2, nlevels=12,
-    edgeThreshold=16, firstLevel=0, WTA_K=2,
-    scoreType=cv2.ORB_HARRIS_SCORE, patchSize=16, fastThreshold=20
+# SIFT
+sift = cv2.SIFT_create(
+    nfeatures=1000,      # Max number of features to retain
+    nOctaveLayers=3,     # Number of layers in each octave
+    contrastThreshold=0.04,  # Lower means more features
+    edgeThreshold=10,    # Higher means more edge filtering
+    sigma=1.6            # Gaussian smoothing
 )
 
 # Keypoints and descriptors
-kp1, des1 = orb.detectAndCompute(roi_img, None)
-kp2, des2 = orb.detectAndCompute(img2, None)
+kp1, des1 = sift.detectAndCompute(roi_img, None)
+kp2, des2 = sift.detectAndCompute(img2, None)
 
 # Compute HOG and LBP
 hog1 = compute_hog_descriptor(roi_img, kp1) if use_hog else None
@@ -123,7 +125,7 @@ matched_img = cv2.drawMatches(roi_img, kp1, img2, kp2, inliers, None,
                               flags=cv2.DrawMatchesFlags_NOT_DRAW_SINGLE_POINTS)
 plt.figure(figsize=(12, 6))
 plt.imshow(matched_img, cmap='gray')
-plt.title("ORB + HOG + LBP Matching with RANSAC")
+plt.title("sift + HOG + LBP Matching with RANSAC")
 plt.axis('off')
 plt.show()
 
