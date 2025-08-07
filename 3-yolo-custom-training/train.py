@@ -9,6 +9,6 @@ model.train(
     epochs=50,
     imgsz=640,
     batch=16,
-    project="runs/train",
+    project="/path/to/save/model",
     name="custom_yolov8"
 )
