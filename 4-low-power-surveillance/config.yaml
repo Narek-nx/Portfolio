@@ -1,0 +1,4 @@
+video_path: "input.mp4"         # Path to the input video file
+model_path: "weights/best.pt"   # Path to your YOLOv8 model
+alert_classes: ["person"]       # Classes to trigger alert on
+alert_once_per: 150             # Alert only once per this many frames
