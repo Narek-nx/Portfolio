@@ -113,7 +113,7 @@ good_matches = [m for m, n in matches if m.distance < 0.75 * n.distance]
 if len(good_matches) > 4:
     pts1 = np.float32([kp1[m.queryIdx].pt for m in good_matches])
     pts2 = np.float32([kp2[m.trainIdx].pt for m in good_matches])
-    H, mask = cv2.findHomography(pts1, pts2, cv2.RANSAC, 5.0)
+    H, mask = cv2.findHomography(pts1, pts2, cv2.USAC_DEGENSAC, 5.0)
     inliers = [good_matches[i] for i in range(len(good_matches)) if mask[i]]
     print(f"Found {len(inliers)} inlier matches after RANSAC.")
 else:
