@@ -1,0 +1,3 @@
+ultralytics==8.0.216  # YOLOv8
+opencv-python==4.7.0.72
+numpy
